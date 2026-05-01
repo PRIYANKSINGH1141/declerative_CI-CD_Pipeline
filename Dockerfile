@@ -14,7 +14,6 @@ RUN apt-get update && \
     pkg-config \
     build-essential \
     && pip install --upgrade pip \
-    && pip install --no-cache-dir mysqlclient \
     && pip install --no-cache-dir -r requirements.txt \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
